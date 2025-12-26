@@ -42,7 +42,6 @@ class PathfinderVisualizer:
             
             if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
                 mouse_pos = pygame.mouse.get_pos()
-               
                 if self.buttons[0].is_clicked(mouse_pos) and not self.running_algorithm:
                     self._run_algorithm('astar')
                 elif self.buttons[1].is_clicked(mouse_pos) and not self.running_algorithm:

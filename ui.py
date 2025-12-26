@@ -61,6 +61,5 @@ class StatusBar:
     def _draw_legend_item(self, screen, x, y, color, text):
         pygame.draw.rect(screen, color, (x, y, 18, 18))
         pygame.draw.rect(screen, BLACK, (x, y, 18, 18), 1)
- 
         text_surf = self.font_small.render(text, True, COLOR_TEXT)
         screen.blit(text_surf, (x + 24, y - 1))
